@@ -356,6 +356,9 @@ public class FormalContext {
         List<String> x = new LinkedList<>();
         x.addAll(c.getIntension());
         //想这一步能不能并入到下面for循环中，同一般取规则算法一样。
+        if(d == 0){
+            return  null;
+        }
         if (d == 1) {
             List<String> x1 = new LinkedList<>();
             x1.addAll(c.getParents().get(0).getIntension());
